@@ -1,1 +1,87 @@
-<>
+input {
+    margin: 10px;
+    padding: 3px;
+    border-width: 3px;
+    border-color: gray;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.cantSignIn {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+}
+
+body {
+    background-image: url("backgroundIMG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-signUp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px repeat(8, 1fr);
+    column-gap: 15px;
+    row-gap: 2px;
+}
+
+.title-signUp {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(245, 244, 242);
+    text-align: center;
+    font-size: 30px;
+}
+
+.username-signUp {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgb(245, 244, 242);
+}
+
+.password-signUp {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: rgb(245, 244, 242);
+}
+
+.repeatPassword-signUp {
+    grid-column: 2;
+    grid-row: 5;
+    background-color: rgb(245, 244, 242);
+}
+
+.staySignedIn {
+    grid-column: 2;
+    grid-row: 6;
+    background-color: rgb(245, 244, 242);
+    text-align: right;
+    width: 130px;
+    padding-left: 50px;
+}
+
+.button-signUp {
+    grid-column: 2;
+    grid-row: 6;
+    background-color: rgb(245, 244, 242);
+    width: 80px;
+    position: relative;
+    left: 50%;
+}
+
+.cantSignIn {
+    grid-column: 2;
+    grid-row: 7;
+    background-color: rgb(245, 244, 242);
+    text-align: center;
+}
+
+.createAccount {
+    grid-column: 2;
+    grid-row: 8;
+    background-color: rgb(245, 244, 242);
+    text-align: center;
+}
