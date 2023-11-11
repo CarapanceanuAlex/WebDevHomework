@@ -18,20 +18,23 @@ body {
     background-image: url("backgroundIMG.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
 }
 
 .container-signUp {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px repeat(8, 1fr);
-    column-gap: 15px;
-    row-gap: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: 450px;
 }
 
 .title-signUp {
     grid-column: 2;
     grid-row: 2;
-    background-color: rgb(245, 244, 242);
     text-align: center;
     font-size: 30px;
 }
@@ -39,49 +42,118 @@ body {
 .username-signUp {
     grid-column: 2;
     grid-row: 3;
-    background-color: rgb(245, 244, 242);
+    width: 300px;
+    height: 150px;
+    background-color: rgb(231, 229, 229);
 }
 
 .password-signUp {
     grid-column: 2;
     grid-row: 4;
-    background-color: rgb(245, 244, 242);
+    width: 300px;
+    height: 150px;
+    background-color: rgb(231, 229, 229);
 }
 
 .repeatPassword-signUp {
     grid-column: 2;
     grid-row: 5;
-    background-color: rgb(245, 244, 242);
+    width: 300px;
+    height: 150px;
+    background-color: rgb(231, 229, 229);
 }
 
-.staySignedIn {
+.staySignedIn-signUp {
     grid-column: 2;
     grid-row: 6;
-    background-color: rgb(245, 244, 242);
     text-align: right;
     width: 130px;
-    padding-left: 50px;
+    position: relative;
+    bottom: 1%; 
+    padding-right: 250px;
+    top: 18%;
 }
 
 .button-signUp {
     grid-column: 2;
     grid-row: 6;
-    background-color: rgb(245, 244, 242);
-    width: 80px;
+    width: 60px;
+    height: 60px;
     position: relative;
-    left: 50%;
+    align-items: center;
+    font-size: xx-large;
+    top: 13%;
+    background-color: rgb(241, 241, 241);
 }
 
-.cantSignIn {
+.cantSignIn-signUp {
     grid-column: 2;
     grid-row: 7;
-    background-color: rgb(245, 244, 242);
     text-align: center;
+    padding-top: 60px;
 }
 
-.createAccount {
-    grid-column: 2;
-    grid-row: 8;
-    background-color: rgb(245, 244, 242);
-    text-align: center;
+/*DE AICI E PAGINA DE SIGN IN */
+
+.container-signIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: 450px;
 }
+
+.title-signIn {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    font-size: 30px;
+}
+
+.username-signIn {
+    grid-column: 2;
+    grid-row: 3;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(231, 229, 229);
+}
+
+.password-signIn {
+    grid-column: 2;
+    grid-row: 4;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(231, 229, 229);
+}
+
+.staySignedIn-signIn {
+    grid-column: 2;
+    grid-row: 6;
+    text-align: right;
+    width: 130px;
+    position: relative;
+    bottom: 1%; 
+    padding-right: 250px;
+    top: 18%;
+}
+
+.button-signIn {
+    grid-column: 2;
+    grid-row: 6;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    align-items: center;
+    font-size: xx-large;
+    top: 13%;
+    background-color: rgb(241, 241, 241);
+}
+
+.cantSignIn-signIn {
+    grid-column: 2;
+    grid-row: 7;
+    text-align: center;
+    padding-top: 60px;
+}
+
