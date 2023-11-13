@@ -8,12 +8,6 @@ input {
     letter-spacing: 1px;
 }
 
-.cantSignIn {
-    font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: gray;
-}
-
 body {
     background-image: url("backgroundIMG.jpg");
     background-size: cover;
@@ -164,7 +158,10 @@ body {
     flex-direction: column;
     align-items: center;
     width: 700px;
-    height: 650px;
+    height: 750px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
 }
 
 .title-CantSignIn{
@@ -177,20 +174,58 @@ body {
     color: aliceblue;
 }
 
+.casuteAlbe {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    padding-top: 50px;
+}
+
 .casutaUsername {
     background-color: aliceblue;
-    width: 200px;
-    height: 270px;
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .casutaPassword {
     background-color: aliceblue;
-    width: 200px;
-    height: 270px;
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .casutaEmail {
     background-color: aliceblue;
-    width: 200px;
-    height: 270px;
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lostUsername {
+    text-align: center;
+}
+
+.subtxt.lUsername {
+   
+}
+
+.lostPassword {
+    text-align: center;
+}
+
+.subtxt.lPassword {
+    
+}
+
+.lostEmail {
+    text-align: center;
+}
+
+.subtxt.lEmail {
+ 
 }
