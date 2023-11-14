@@ -24,6 +24,8 @@ body {
     background-color: white;
     width: 400px;
     height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .title-signUp {
@@ -96,6 +98,10 @@ body {
     background-color: white;
     width: 400px;
     height: 450px;
+    /* ASTA FACE COLTURILE ROTUNJITE*/
+    border-radius: 10px;
+    overflow: hidden;
+    /* ASTA FACE COLTURILE ROTUNJITE*/
 }
 
 .title-signIn {
@@ -188,6 +194,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .casutaPassword {
@@ -197,6 +205,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .casutaEmail {
@@ -206,6 +216,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .lostUsername {
