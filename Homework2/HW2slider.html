@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Image slider</title>
+        <link rel="stylesheet" href="HW2style.css">
+    </head>
+    <body>   
+    <!--START slider-->
+        <div class="slider">
+            <div class="slides">
+                <!--START radio-->
+                <input type="radio" name="radioBut" id="radio1">
+                <input type="radio" name="radioBut" id="radio2">
+                <input type="radio" name="radioBut" id="radio3">
+                <input type="radio" name="radioBut" id="radio4">
+                <input type="radio" name="radioBut" id="radio5">
+                <!--END radio-->
+
+                <!--START images-->
+                <div class="slide first">
+                    <img src="IMAGES\slideIMG1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="IMAGES\slideIMG2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="IMAGES\slideIMG3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="IMAGES\slideIMG4.jpg">
+                </div>
+                <div class="slide">
+                    <img src="IMAGES\slideIMG5.jpg">
+                </div>
+                <!--END images-->
+
+                <!--START autoNav-->
+                <div class="autoNav">
+                    <div class="autoBut1"></div>
+                    <div class="autoBut2"></div>
+                    <div class="autoBut3"></div>
+                    <div class="autoBut4"></div>
+                    <div class="autoBut5"></div>
+                </div>
+                <!--END autoNav-->
+            </div>
+                <!--START manualNav-->
+                <div class="manualNav">
+                    <label for="radio1" class="manualBut"></label>
+                    <label for="radio2" class="manualBut"></label>
+                    <label for="radio3" class="manualBut"></label>
+                    <label for="radio4" class="manualBut"></label>
+                    <label for="radio5" class="manualBut"></label>
+                </div>
+                <!--END manualNav-->
+        </div>
+        <!--END slider-->
+    
+        <script src="HW2slider.js"></script>
+    </body>
+</html>

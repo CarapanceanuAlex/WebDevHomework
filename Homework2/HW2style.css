@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(37, 37, 37);
+}
+
+.slider {
+    width: 800px;
+    height: 700px;
+    border-radius: 10px; /*rotunjeste colturile pozelor*/
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 750px;
+    display: flex;
+    transition: margin-left 2s; /* cat dureaza pana se schimba complet imaginea */
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+}
+
+.slide img {
+    width: 800px;
+    height: 700px;
+}
+
+/* pentru manualNav */
+
+.manualNav {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manualBut {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s; /*cat timp dureaza pana se coloreaza butonul */
+    margin-right: 40px;
+}
+
+.manualBut:hover {
+    background: rgb(255, 255, 255);
+}
