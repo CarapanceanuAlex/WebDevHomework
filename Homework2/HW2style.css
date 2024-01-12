@@ -11,8 +11,8 @@ body {
 .slider {
     width: 800px;
     height: 700px;
-    border-radius: 10px; /*rotunjeste colturile pozelor*/
-    overflow: hidden;
+    border-radius: 10px; /*astea doua rotunjesc colturile pozelor*/
+    overflow: hidden;    /*si asta*/
 }
 
 .slides {
@@ -24,10 +24,6 @@ body {
 
 .slides input {
     display: none;
-}
-
-.slide {
-    width: 20%;
 }
 
 .slide img {
@@ -55,5 +51,9 @@ body {
 }
 
 .manualBut:hover {
+    background: rgb(255, 255, 255);
+}
+
+.manualBut.checked {
     background: rgb(255, 255, 255);
 }
