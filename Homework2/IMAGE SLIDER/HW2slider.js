@@ -36,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // un apel initial al functiei ca atunci cand se da load la pagina sa fie bifat primul radio button si prima poza sa fie cea buna
     changeSlide();
 
-    // Function to update the styling of manual navigation buttons
-    
+    // functie care updateaza style-ul butoanelor ca sa ramana colorate cand sunt selectate
+    function updateManualButtons() {
+        manualButtons.forEach(function (manualButton, index) {
+            if (index === currentIndex) {
+                manualButton.classList.add('checked');
+            } else {
+                manualButton.classList.remove('checked');
+            }
+        });
+    }
 });
