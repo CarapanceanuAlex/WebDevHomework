@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="schizoSound1" src="sounds/bleepSound.mp3"></audio>
+    <audio id="schizoSound2" src="sounds/errorSound.mp3"></audio>
+    <audio id="schizoSound3" src="sounds/schizoSound.mp3"></audio>
+    <audio id="schizoSound4" src="sounds/sirenSound.mp3"></audio>
+    <audio id="failSound" src="sounds/failSound.mp3"></audio>
+    <div>
+        <div onclick="panelClicked(event.currentTarget)" class="panelTL" id="panelTL"> <!--TL = top left-->
+        </div>
+        <div onclick="panelClicked(event.currentTarget)" class="panelTR" id="panelTR"> <!--TR = top right-->
+        </div>
+    </div>
+    <div>
+        <div onclick="panelClicked(event.currentTarget)" class="panelBL" id="panelBL"> <!--BL = bottom left-->
+        </div>
+        <div onclick="panelClicked(event.currentTarget)" class="panelBR" id="panelBR"> <!--BR = bottom right-->
+        </div>
+    </div>
+    <script src="audio.js"></script>
+</body>
+</html>
+
+<!--AUDIO WARNING, GRIJA LA URECHI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
