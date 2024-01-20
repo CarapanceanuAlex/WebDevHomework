@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>NOTITE!!!!!!!!!</title>
+</head>
+<body>
+    <div id="notes">
+        <div id="noteList">
+            <h2>Your notes</h2>
+            <ul id="notes">
+            </ul>
+        </div>
+        <div id="noteEditor">
+            <h2>Edit</h2>
+            <div>
+                <textarea id="noteContent" placeholder="Type your note..."></textarea>
+            </div>
+            <div id="selectedNoteID"></div>
+            <div>
+                <button id="createButton" onclick="createNote()">Create</button>
+                <button id="modifyButton" onclick="modifyNote()">Change</button>
+                <button id="deleteButton" onclick="deleteNote()">Delete</button>
+                <button id="deselectButton" onclick="deselectAndClear()">Deselect</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script/notes.js') }}"></script>
+</body>
+</html>
+
